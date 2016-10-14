@@ -5,10 +5,10 @@ define(function(require) {
     var MultChoice = QuestionView.extend({
 
         events: {
-            'focus .mcq-item input':'onItemFocus',
-            'blur .mcq-item input':'onItemBlur',
-            'change .mcq-item input':'onItemSelected',
-            'keyup .mcq-item input':'onKeyPress'
+            'focus .multchoice-item input':'onItemFocus',
+            'blur .multchoice-item input':'onItemBlur',
+            'change .multchoice-item input':'onItemSelected',
+            'keyup .multchoice-item input':'onKeyPress'
         },
 
         resetQuestionOnRevisit: function() {
