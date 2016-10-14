@@ -5,3 +5,7 @@ This plugin has not been submitted to adapt's framework, so if you're interested
 ##Usage
 
 The idea behind this plugin is to have a multiple choice question that is not scored, yet the feedback is saved. This is ideal for projects in which for the learner there is a self-reflection piece, yet the creators of the learning objects want to understand what the learners select.
+
+##NOTES
+
+This plugin is not yet completed. Don't use it yet.
