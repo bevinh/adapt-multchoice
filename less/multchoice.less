@@ -1,10 +1,10 @@
-.mcq-component {
-    .mcq-item {
+.multchoice-component {
+    .multchoice-item {
         background-color:@item-color;
         position:relative;
     }
 
-    .mcq-item label {
+    .multchoice-item label {
         color:@item-text-color;
         display:block;
         margin-bottom:2px;
@@ -13,7 +13,7 @@
         background-color:@item-color;
         cursor:pointer;
 
-        .mcq-answer-icon {
+        .multchoice-answer-icon {
             color:@item-text-color;
             &.radio {
                 width: @icon-size + 2;
@@ -39,7 +39,7 @@
             color:@item-text-color-selected;
             background-color:@item-color-selected;
             border-color:@item-border-color-selected;
-            .mcq-answer-icon {
+            .multchoice-answer-icon {
                  &.radio {
                     &:before {
                         content: "\e65d";
@@ -57,13 +57,13 @@
                     border-radius: 2px;
                 }
             }
-            .mcq-item-icon {
+            .multchoice-item-icon {
                 color:@item-text-color-selected;
             }
         }
     }
 
-    .mcq-item-inner {
+    .multchoice-item-inner {
         padding:@item-padding;
         padding-left:(@icon-size+(@item-padding-left*2));
 	    .dir-rtl & {
@@ -72,7 +72,7 @@
 	    }
     }
 
-    .mcq-item input {
+    .multchoice-item input {
         position:absolute;
         top:14px;
         left:14px;
@@ -84,17 +84,17 @@
         }
     }
 
-    .mcq-correct-icon {
+    .multchoice-correct-icon {
         color:@validation-success;
         display:none;
     }
 
-    .mcq-incorrect-icon {
+    .multchoice-incorrect-icon {
         color:@validation-error;
         display:none;
     }
 
-    .mcq-item-state {
+    .multchoice-item-state {
         background:none;
         position:absolute;
         left:10px;
@@ -110,53 +110,53 @@
     }
 }
 
-.mcq-widget {
+.multchoice-widget {
 
     &.show-user-answer {
-        .mcq-item-icon {
+        .multchoice-item-icon {
             display:none;
         }
         .incorrect {
-            .selected .mcq-incorrect-icon {
+            .selected .multchoice-incorrect-icon {
                 display:block;
             }
         }
         .correct {
-            .selected .mcq-correct-icon {
+            .selected .multchoice-correct-icon {
                 display:block;
             }
         }
     }
 
     &.show-correct-answer {
-        .mcq-item-icon {
+        .multchoice-item-icon {
             display:none;
         }
-        .incorrect .selected .mcq-correct-icon,
-        .correct .selected .mcq-correct-icon {
+        .incorrect .selected .multchoice-correct-icon,
+        .correct .selected .multchoice-correct-icon {
             display:block;
         }
     }
 
     &.disabled {
-        .mcq-item label.selected.disabled {
+        .multchoice-item label.selected.disabled {
             color:@item-text-color-selected;
             background-color:@item-color-selected;
             border-color:@item-border-color-selected;
             cursor:default;
         }
-        .mcq-item label.disabled {
+        .multchoice-item label.disabled {
             color:@item-text-color-disabled;
             background-color:@item-color-disabled;
             border-color:@item-border-color-disabled;
             cursor:default;
         }
 
-        .mcq-item.correct .selected .state {
+        .multchoice-item.correct .selected .state {
             color:@validation-success;
         }
 
-        .mcq-item.incorrect .selected .state {
+        .multchoice-item.incorrect .selected .state {
             color:@validation-error;
         }
     }
@@ -164,17 +164,17 @@
 
 .no-touch {
 
-    .mcq-widget {
+    .multchoice-widget {
         &:not(.disabled) {
-            .mcq-item label:hover {
+            .multchoice-item label:hover {
                 color:@item-text-color-hover;
                 background-color:@item-color-hover;
                 border-color:@item-border-color-hover;
-                .mcq-item-icon {
+                .multchoice-item-icon {
                     color:@item-text-color-hover;
                 }
             }
-            .mcq-item label.disabled {
+            .multchoice-item label.disabled {
                 color:@item-text-color-disabled;
                 background-color:@item-color-disabled;
                 border-color:@item-border-color-disabled;
@@ -183,7 +183,7 @@
                     background-color:@item-color-disabled;
                     border-color:@item-border-color-disabled;
                 }
-                .mcq-item-icon {
+                .multchoice-item-icon {
                     color:@item-text-color-disabled;
                 }
             }
