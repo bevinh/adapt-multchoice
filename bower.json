@@ -1,19 +1,21 @@
 {
-  "name": "adapt-multchoice",
-  "authors": [
-    "bevinh"
-  ],
-  "description": "Multiple Choice with No scoring",
-  "main": "js/adapt-multchoice.js",
-  "license": "MIT",
-  "homepage": "",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "src/plugins",
-    "test",
-    "tests"
-  ]
+    "name": "adapt-multchoice",
+    "repository": "git://github.com/bevinh/adapt-multchoice.git",
+    "framework": "~2.0.0",
+    "authors": [
+        "bevinh"
+    ],
+    "description": "Multiple Choice with No scoring",
+    "main": "js/adapt-multchoice.js",
+    "license": "MIT",
+    "homepage": "",
+    "private": false,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "src/plugins",
+        "test",
+        "tests"
+    ]
 }
